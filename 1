@@ -1,0 +1,21 @@
+//write a c program to print the multiplication table of a number until the product reaches or exceds 100.
+
+
+#include <stdio.h>
+
+int main() {
+    int a;
+    printf("Enter the number: ");
+    scanf("%d", &a);
+
+    int i = 1;
+    int product;
+
+    while ((product = a * i) <= 100) {
+        printf("%d * %d = %d\n", a, i, product);
+        i++;
+    }
+
+    return 0;
+}
+
