@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("enter the number:");
+    scanf("%d",&a);
+    int r;
+    int arm=0;
+    int c=a;
+    while(a>0){
+        r=a%10;
+        arm=(r*r*r)+arm;//r multiply a/q to your number
+        a=a/10;
+    }
+    if(c==arm){
+        printf("armstong");
+    }
+        else
+        {
+        printf("not");
+    }
+    return 0;
+}
