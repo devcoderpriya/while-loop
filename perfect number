@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+    int num;
+    printf("Enter your integer no : - ");
+    scanf("%d",&num);
+    
+    int fact=1;
+    int sum=0;
+    
+    while(fact<num){
+        if(num%fact==0){
+            sum=sum+fact;
+        }
+        fact++;
+    }
+    if(sum==num){
+        printf("Prefect number.");
+    }
+    else{
+        printf("Not perfect number");
+    }
+    return 0;
+}
