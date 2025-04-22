@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+    int num, sum=0;
+    printf("Enter negative number then exit the code.\n");
+    
+    while(1){
+        printf("Enter your number :-");
+        scanf("%d",&num);
+        
+        if(num<0){
+            printf("Sum of all number = %d ",sum);
+            printf("Exit the code.\n");
+            break;
+            
+            
+            
+        }
+        sum=sum+num;
+    }
+    return 0;
+}
