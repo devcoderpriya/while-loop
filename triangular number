@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("enter the number:");
+    scanf("%d",&a);
+
+    int i=1;
+    int sum=0;
+
+    while(sum<a)
+{
+    sum=sum+i;
+    i++;
+}
+if(sum==a)
+{
+    printf("triangular number");
+
+}
+else{
+    printf("not triangular number");
+}
+    return 0;
+}
