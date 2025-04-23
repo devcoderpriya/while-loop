@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int rows;
+    printf("enter the number:");
+    scanf("%d",&rows);
+     int i;
+      int k;
+    for ( i = 0; i < rows; i++) 
+{
+           for ( k = 0; k <= i; k++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
